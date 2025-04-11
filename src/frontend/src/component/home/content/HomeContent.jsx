@@ -63,7 +63,7 @@ const HomeContent = () => {
           setBannerTitle([
             "Hi!",
             "My name is Alvin Jake Pabuaya",
-            "I'm a full stack web developer specializing in building web applications using JavaScript, ReactJS, Node.js and Kubernetes",
+            "I'm a full stack web developer specializing in building web applications using JavaScript, ReactJS, Node.js, Kubernetes, and web3 web solutions with the Internet Computer Protocol (ICP) using Azle",
           ])
         }, 200);
       }
@@ -80,7 +80,7 @@ const HomeContent = () => {
               setBannerTitle([
                 "ᜋᜊᜓᜑᜌ᜔!",
                 "ᜀᜅ᜔ ᜉᜅᜎᜈ᜔ ᜃᜓ︀ ᜀᜌ᜔ Alvin Jake Pabuaya",
-                "ᜁᜐ ᜀᜃᜓ︀ᜅ᜔ full stack web developer ᜈ ᜇᜎᜓᜊ᜔ᜑᜐ ᜐ ᜉᜄ᜔ᜊᜓᜂ ᜅ᜔ ᜋ᜔ᜄ web applications ᜄᜋᜒᜆ᜔ ᜀᜅ᜔ JavaScript, ReactJS, Node.js and Kubernetes",
+                "ᜁᜐ ᜀᜃᜓ︀ᜅ᜔ full stack web developer ᜈ ᜇᜎᜓᜊ᜔ᜑᜐ ᜐ ᜉᜄ᜔ᜊᜓᜂ ᜅ᜔ ᜋ᜔ᜄ web applications ᜄᜋᜒᜆ᜔ ᜀᜅ᜔ JavaScript, ReactJS, Node.js, Kubernetes, and web3 web solutions with the Internet Computer Protocol (ICP) using Azle",
               ])
             }, 200);
           }
@@ -93,7 +93,7 @@ const HomeContent = () => {
               setBannerTitle([
                 "Hi!",
                 "My name is Alvin Jake Pabuaya",
-                "I'm a full stack web developer specializing in building web applications using JavaScript, ReactJS, Node.js and Kubernetes",
+                "I'm a full stack web developer specializing in building web applications using JavaScript, ReactJS, Node.js, Kubernetes, and web3 web solutions with the Internet Computer Protocol (ICP) using Azle",
               ])
             }, 200);
           }
