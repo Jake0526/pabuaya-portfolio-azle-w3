@@ -1,0 +1,5 @@
+node_modules
+.dfx/
+**/declarations/
+.azle/
+package-lock.json

@@ -1,0 +1,60 @@
+{
+  "_from": "fullcalendar@^5.10.1",
+  "_id": "fullcalendar@5.11.5",
+  "_inBundle": false,
+  "_integrity": "sha512-eaVD6zOvuFXVpoMKlg2FQAj8e+PcpitBMwlzwRJJr1zOi/dXMYAksx2hLzwtsr93FVUNSSo16xwMTTZz6+prKQ==",
+  "_location": "/fullcalendar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "fullcalendar@^5.10.1",
+    "name": "fullcalendar",
+    "escapedName": "fullcalendar",
+    "rawSpec": "^5.10.1",
+    "saveSpec": null,
+    "fetchSpec": "^5.10.1"
+  },
+  "_requiredBy": [
+    "/admin-lte"
+  ],
+  "_resolved": "https://registry.npmjs.org/fullcalendar/-/fullcalendar-5.11.5.tgz",
+  "_shasum": "db57191c4741ceb9a217e47a4cdba8c9ad81b738",
+  "_spec": "fullcalendar@^5.10.1",
+  "_where": "/home/jake/personal/room-reservation/node_modules/admin-lte",
+  "author": {
+    "name": "Adam Shaw",
+    "email": "arshaw@arshaw.com",
+    "url": "http://arshaw.com/"
+  },
+  "browserGlobal": "FullCalendar",
+  "bugs": {
+    "url": "https://fullcalendar.io/reporting-bugs"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "An easily consumable combination of standard plugins",
+  "devDependencies": {
+    "@fullcalendar/bootstrap": "~5.11.5",
+    "@fullcalendar/bootstrap5": "~5.11.5",
+    "@fullcalendar/core": "~5.11.5",
+    "@fullcalendar/daygrid": "~5.11.5",
+    "@fullcalendar/google-calendar": "~5.11.5",
+    "@fullcalendar/interaction": "~5.11.5",
+    "@fullcalendar/list": "~5.11.5",
+    "@fullcalendar/timegrid": "~5.11.5"
+  },
+  "docs": "https://fullcalendar.io/docs/initialize-globals",
+  "homepage": "https://fullcalendar.io/",
+  "jsdelivr": "main.min.js",
+  "license": "MIT",
+  "main": "main.js",
+  "name": "fullcalendar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullcalendar/fullcalendar.git",
+    "homepage": "https://github.com/fullcalendar/fullcalendar"
+  },
+  "title": "FullCalendar Standard Bundle",
+  "version": "5.11.5"
+}

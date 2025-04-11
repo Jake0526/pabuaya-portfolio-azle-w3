@@ -1,0 +1,6 @@
+.noto-sans-tagalog-regular {
+  src: url("./NotoSansTagalog-Regular.ttf") format("truetype");
+  font-family: "Noto Sans Tagalog", serif;
+  font-weight: 400;
+  font-style: normal;
+}
