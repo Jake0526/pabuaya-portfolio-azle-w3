@@ -224,9 +224,9 @@ const HomeContent = () => {
                   document.getElementById('work-section').scrollIntoView({ behavior: 'smooth' });
                 }}>Works</a>
               </li>
-              {/* <li className="nav-item" style={{ marginRight: '10px' }}>
-                <a href="/login" className="nav-link btn btn-outline-light rounded-pill" style={{ color: '#ffffff' }}>Login</a>
-              </li> */}
+              <li className="nav-item">
+                <a href="/time-capsule" className="nav-link" style={{ color: '#ffffff' }}>Time Capsule</a>
+              </li>
               <li className="nav-item">
                 <a href="#lets-build" className="nav-link btn btn-primary rounded-pill" style={{ color: '#ffffff' }} onClick={(e) => {
                   e.preventDefault(); // Prevent default anchor behavior
@@ -329,7 +329,7 @@ const HomeContent = () => {
           <div className="container" data-aos="fade-in" data-aos-duration="1000" data-aos-offset="300">
             <center> <h1><strong>ABOUT</strong></h1> </center>
             <p style={{ fontSize: '20px' }}>
-              I am a Full Stack Web Developer with 9+ years of experience in designing, developing, and maintaining robust and scalable web applications. Expertise in full-stack development, with a strong focus on cloud-native architectures. Proficient in Kubernetes for container orchestration and Git for efficient version control. Deep understanding of Single Sign-On (SSO) principles and hands-on experience with Hydra. Passionate about CI/CD best practices and implementing automated pipelines for streamlined software delivery.
+              I am a Full Stack Web Developer with 9+ years of experience in designing, developing, and maintaining robust and scalable web applications. Expertise in full-stack development, with a strong focus on cloud-native architectures and web3 web solutions using the Internet Computer Protocol (ICP) with Azle. Proficient in Kubernetes for container orchestration and Git for efficient version control. Deep understanding of Identity and Access Management and Single Sign-On (SSO) principles and hands-on experience with Ory Hydra. Passionate about CI/CD best practices and implementing automated pipelines for streamlined software delivery.
             </p>
           </div>
         </div>
@@ -391,6 +391,11 @@ const HomeContent = () => {
                 <input type="text" className="knob" value="80" data-width="100" data-height="100" data-fgcolor="#3c8dbc"/>
 
                 <div className="knob-label">MeteorJS</div>
+              </div>
+              <div className="col-6 col-md-3 text-center">
+                <input type="text" className="knob" value="80" data-width="100" data-height="100" data-fgcolor="#00c0ef"/>
+
+                <div className="knob-label">ICP (Azle)</div>
               </div>
             </div> <br /> <br />
             <div className="timeline timeline-inverse">

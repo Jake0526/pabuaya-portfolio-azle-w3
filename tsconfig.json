@@ -2,10 +2,13 @@
     "compilerOptions": {
         "strict": true,
         "target": "ES2020",
-        "experimentalDecorators": true,
+        "experimentalDecorators": false,
         "strictPropertyInitialization": false,
         "moduleResolution": "node",
         "allowJs": true,
-        "outDir": "HACK_BECAUSE_OF_ALLOW_JS"
+        "outDir": "HACK_BECAUSE_OF_ALLOW_JS",
+        "paths": {
+            "azle": ["./node_modules/azle/src/stable/lib/index"]
+        }
     }
 }

@@ -41,4 +41,12 @@ export default defineConfig({
     ],
     dedupe: ['@dfinity/agent'],
   },
+  define: {
+    'process.env': {
+      // Expose specific variables (optional, for explicit control)
+      CANISTER_ID_BACKEND: process.env.CANISTER_ID_BACKEND,
+      DFX_NETWORK: process.env.DFX_NETWORK,
+      // Add other variables as needed
+    },
+  },
 });

@@ -1,0 +1,98 @@
+import { Canister, query, update, text, nat64, Principal, Record, Vec, StableBTreeMap, ic, bool } from 'azle/experimental';
+
+// Define the Capsule structure using Record from azle/experimental
+const Capsule = Record({
+  id: nat64,
+  owner: Principal,
+  contents: Vec(
+    Record({
+      key: text,
+      value: text
+    })
+  ),
+  unlockTime: nat64,
+  recipients: Vec(Principal),
+  isPublic: bool
+});
+
+// Use StableBTreeMap for persistence
+let capsules = StableBTreeMap<nat64, typeof Capsule.tsType>(0);
+let nextId: nat64 = 0n;
+
+export default Canister({
+  createCapsule: update([
+    Vec(Record({
+      key: text,
+      value: text
+    })),
+    nat64,
+    Vec(Principal),
+    bool
+  ], nat64, (contents, unlockTime, recipients, isPublic) => {
+    // Log for debugging
+    console.log('Who request: ', ic.caller())
+    console.log('createCapsule called with:', { contents, unlockTime, recipients, isPublic });
+
+    const id = nextId;
+    nextId += 1n;
+    
+    // Store the capsule
+    capsules.insert(id, {
+      id,
+      owner: ic.caller(),
+      contents,
+      unlockTime,
+      recipients,
+      isPublic
+    });
+    
+    return id;
+  })
+});
+
+//   // Query a capsule
+//   getCapsule: query([nat64], Opt(Capsule), id => {
+//     try {
+//       const capsule = capsules.get(id);
+//       if (!capsule) return null;
+
+//       const now = BigInt(Date.now()) * 1_000_000n;
+
+//       if (typeof ic === 'undefined') {
+//         console.error('ic is undefined in getCapsule');
+//         return null; // Fallback: deny access if ic is undefined
+//       }
+
+//       const caller = ic.caller();
+//       if (!caller || caller.isAnonymous()) {
+//         return null;
+//       }
+
+//       if (
+//         now < capsule.unlockTime &&
+//         !capsule.recipients.includes(caller) &&
+//         capsule.owner !== caller
+//       ) {
+//         return null;
+//       }
+
+//       return capsule;
+//     } catch (err) {
+//       console.error('Error in getCapsule:', err);
+//       return null;
+//     }
+//   }),
+
+//   // List public capsules
+//   getPublicCapsules: query([], Vec(Capsule), () => {
+//     try {
+//       const now = BigInt(Date.now()) * 1_000_000n;
+//       return Array.from(capsules.values()).filter(
+//         c => c.isPublic && now >= c.unlockTime
+//       );
+//     } catch (err) {
+//       console.error('Error in getPublicCapsules:', err);
+//       return [];
+//     }
+//   })
+// });
