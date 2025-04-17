@@ -3,3 +3,4 @@ node_modules
 **/declarations/
 .azle/
 package-lock.json
+.mops

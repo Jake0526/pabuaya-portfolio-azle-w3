@@ -8,7 +8,10 @@
         "allowJs": true,
         "outDir": "HACK_BECAUSE_OF_ALLOW_JS",
         "paths": {
-            "azle": ["./node_modules/azle/src/stable/lib/index"]
+            "azle": ["./node_modules/azle/src/stable/lib/index"],
+            "azle/canisters/icrc_1/idl": ["./node_modules/azle/src/lib/canisters/icrc_1/idl/index"],
+            "azle/canisters/icrc_2/idl": ["./node_modules/azle/src/lib/canisters/icrc_2/idl/index"],
+            "dotenv": ["./node_modules/dotenv/lib/main"]
         }
     }
 }

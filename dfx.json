@@ -1,12 +1,5 @@
 {
   "canisters": {
-    "backend": {
-      "type": "azle",
-      "main": "src/backend/index.ts",
-      "custom": {
-        "experimental": true
-      }
-    },
     "candidBackend": {
       "type": "azle",
       "main": "src/candidBackend/main.ts",
@@ -14,9 +7,12 @@
         "experimental": true
       }
     },
+    "icrc": {
+      "type": "motoko",
+      "main": "src/candidBackend/ICRC-1/ref/ICRC1.mo"
+    },
     "frontend": {
       "dependencies": [
-        "backend",
         "candidBackend"
       ],
       "source": [

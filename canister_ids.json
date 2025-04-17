@@ -2,7 +2,13 @@
   "backend": {
     "ic": "4p6wm-2iaaa-aaaan-qzy2a-cai"
   },
+  "candidBackend": {
+    "ic": "4b43e-byaaa-aaaan-qzy3a-cai"
+  },
   "frontend": {
     "ic": "4i7qy-xqaaa-aaaan-qzy2q-cai"
+  },
+  "icrc": {
+    "ic": "5ms7k-oqaaa-aaaan-qzy4q-cai"
   }
 }
